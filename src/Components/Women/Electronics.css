@@ -1,0 +1,64 @@
+
+.Electronics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  .clothing-list {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .clothing-item {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  
+  }
+  
+  .image-container {
+    flex: 0 0 120px; 
+    margin-right: 20px;
+  }
+  
+  .clothing-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .info-container {
+    flex: 1; 
+  }
+  
+  .info-container h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .info-container p {
+    margin: 5px 0;
+  }
+  .Electronics-container {
+    width: 80%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+
+  h2 {
+    text-align:  center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+   
+
+   

@@ -1,0 +1,16 @@
+/* Ensure the carousel images fit their container
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Adjust this value as needed */
+  /* } */
+  
+  /* Style the legend (caption) */
+  /* .carousel .legend {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+   */ 

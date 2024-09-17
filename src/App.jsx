@@ -1,30 +1,36 @@
-
-import React, { useState } from 'react';
-import Navbar from './Components/Navbar';
-import ProductList from './Components/productList';
-import Cart from './Components/Cart';
-import './App.css';
+import React from 'react'; 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { CartContext } from './CartContext'; // Adjust the path if CartContext.js is in a subdirectory
+// import { CartProvider } from './CartProvider';
+import { CartProvider } from './Context/CartProvider';
+import Navbar from './Components/Navbar'; 
+import Jewellery from './Components/Women/Jewellery';  
+import MenClothing from './Components/Women/Men';
+// import Electronic from './Components/Women/Electronic';
+import Home from './Components/Home';
+import WomenClothing from './Components/Women/Women';
+// import './Navbar.css'; 
 
 const App = () => {
-  const [cartItems, setCartItems] = useState([]); 
+  return (  
+    <CartProvider> 
+      <BrowserRouter>
+        <Navbar />
+        <Routes> 
+          <Route path="home" element={<Home />} />
+          <Route path="women" element={<WomenClothing />} />
+          <Route path="jewellery" element={<Jewellery />} />
+          {/* <Route path="electronic" element={<Electronic />} /> */}
+          <Route path="men" element={<MenClothing />} />
+          <Route path="cartProvider" element={<CartProvider  />} />
 
-  const addItemToCart = (item) => {
-    setCartItems((prevItems) => [...prevItems, item]);
-  };
-
-  const removeFromCart = (id) => {
-    setCartItems((prevItems) => prevItems.filter(item => item.id !== id));
-  };
-
-  return (
-    <div className="App">
-      <Navbar />
-      <ProductList addItemToCart={addItemToCart} />
-      <Cart cartItems={cartItems} removeFromCart={removeFromCart} /> 
-    </div>
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
-};
+}; 
 
 export default App;
+
 
 

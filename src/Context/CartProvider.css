@@ -1,0 +1,45 @@
+/* CartSummary.css */
+
+/* Styling for the cart summary container */
+.CartSummaryContainer {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the cart items */
+.CartItem {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.CartItem img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.CartItem p {
+  margin-bottom: 5px;
+}
+
+/* Styling for buttons */
+.CartButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.CartButton:hover {
+  background-color: #0056b3;
+}
